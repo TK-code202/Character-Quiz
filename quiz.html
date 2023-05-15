@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-3.6.4.js"></script>
+    <script src="js/script.js"></script>
+    <link rel="icon" href="img/logo.jpg">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Character Quiz</title>
+</head>
+<body class="bg-info">
+    <div class="container">
+        <div class="head-section">
+            <!-- <div class="background">
+                <img src="img/bg1034.jpg" alt="">
+            </div> -->
+            <div class="logo-section mt-2">      
+                <img src="img/logo.jpg" alt="logo">
+                <h3 class="mt-3 text-light">avengers character quiz</h3>
+
+                <ul class="nav mt-2">
+               
+                    <li class="nav-item">
+                        <a class="nav-link " href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="quiz.html">Quiz</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <form id="formOne" class="was-validated w-75 mb-2 border rounded-lg">
+            <h4>Fill out the fields below to find your character match.</h4>
+            <div class="mt-3 mb-3">
+                <label for="team" class="form-label">How well would you say you work with others?</label>
+                <select name="" id="team" class="form-control" required>
+                    <option value="">Select an Option</option>
+                    <option value="v-well">Very well</option>
+                    <option value="leading">Well, only when I am the leader</option>
+                    <option value="n-v-well">Not very well.</option>
+                </select>
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+             
+            </div>
+
+            <div class="mt-3 mb-3">
+                <label for="weapon" class="form-label">What weapon would you prefer to use?</label>
+                <select name="" id="weapon" class="form-control" required>
+                    <option value="">Select an Option</option>
+                    <option value="hammer">Hammer</option>
+                    <option value="shield">Shield</option>
+                    <option value="me">Me</option>
+                    <option value="magic">Magic</option>
+                    <option value="any">Any weapon lying around</option>
+                    <option value="bow">Bow and Arrow</option>
+                </select>
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+              
+            </div>
+
+            <div class="mt-3 mb-3">
+                <label for="flaw" class="form-label">What is your biggest personality flaw?</label>
+                <select name="" id="flaw" class="form-control" required>
+                    <option value="">Select an Option</option>
+                    <option value="ego">Ego</option>
+                    <option value="careless">Carelessness</option>
+                    <option value="unserious">Not taking things too seriously</option>
+                    <option value="anger">Temperament</option>
+                    <option value="stubborn">Stuborness</option>
+                </select>
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+              
+            </div>
+
+            <div class="mt-3 mb-3">
+                <label for="idea" class="form-label">You are in a team and you've all discussed the solutions to a problem and have agreed the solution to the problem, but you strongly think in your mind something else is a better solution what would you do?</label>
+                <select name="" id="idea" class="form-control" required>
+                    <option value="">Select an Option</option>
+                    <option value="nothing">Do nothing about it.</option>
+                    <option value="do-it">Go ahead with my solution without telling others since they would most likely not agree despite you thinking it's the best solution.</option>
+                    <option value="only-if">Only go ahead with my solution if I realize I am not the only one having that opinion.</option>
+                </select>
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+              
+            </div>
+
+            <div class="mt-3 mb-3">
+                <label for="liked" class="form-label">What do you like most about yourself?</label>
+                <select name="" id="liked" class="form-control" required>
+                    <option value="">Select an Option</option>
+                    <option value="mind">My mind</option>
+                    <option value="moral">Moral Behaviour</option>
+                    <option value="resource">Resourcefulness</option>
+                    <option value="strength">My strength</option>
+                    <option value="efficient">Efficiency</option>
+                    <option value="leadership">My Leadership Skills</option>
+                    
+                </select>
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+              
+            </div>
+
+            <div class="mt-3 mb-3">
+                <label for="self" class="form-label">How would you describe yourself?</label>
+                <select name="" id="self" class="form-control" required>
+                    <option value="">Select an Option</option>
+                    <option value="extrovert">Extrovert</option>
+                    <option value="introvert">Introvert</option>
+                    <option value="calculated">Calculated</option>
+                    <option value="social">Social</option>
+                    <option value="peacemaker">Peacemaker</option>
+                    <option value="leader">Leader</option>
+                    
+                </select>
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+              
+            </div>
+    
+            <button class="btn btn-success" type="submit">Find Character</button>
+        </form>
+        
+        <div class="profile">
+            <h3 class="information mt-3">The Avenger you mostly match with is:</h3>
+            <div class="profiles profileOne">
+                <img src="img/cap.jpg" alt="">
+                <h5 class="tag mt-o ">Steve Rogers (Captain America)</h5>
+            </div>
+
+            <div class="profiles profileTwo mt-2">
+                <img src="img/stark.jpg" alt="">
+                <h5 class="tag ">Tony Stark (Iron Man)</h5>
+            </div>
+
+            <div class="profiles profileThree mt-2">
+                <img src="img/thor.jpg" alt="">
+                <h5 class="tag mt-o">Thor</h5>
+            </div>
+
+            <div class="profiles profileFour mt-2">
+                <img src="img/nat.jpg" alt="">
+                <h5 class="tag mt-o">Natasha Romanoff(Black Widow)</h5>
+            </div>
+
+            <div class="profiles profileFive mt-2">
+                <img src="img/fury.jpg" alt="">
+                <h5 class="tag mt-o">Nick Fury</h5>
+            </div>
+
+            <div class="profiles profileSix mt-2">
+                <img src="img/hulk.jpg" alt="">
+                <h5 class="tag mt-o">Bruce Banner(The Hulk)</h5>
+            </div>
+
+            <div class="profiles profileSeven mt-2">
+                <img src="img/hawkeye.jpg" alt="">
+                <h5 class="tag mt-o">Clint Barton (Hawkeye)</h5>
+            </div>
+
+            <div class="profiles profileEight mt-2">
+                <img src="img/parker.jpg" alt="">
+                <h5 class="tag mt-o">Peter Parker(Spiderman)</h5>
+            </div>
+
+            <div class="profiles profileNine mt-2">
+                <img src="img/ste.jpg" alt="">
+                <h5 class="tag mt-o">Dr. Stepen Strange</h5>
+            </div>
+        </div>
+    </div>
+  
+</body>
+</html>
