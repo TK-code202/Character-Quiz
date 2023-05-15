@@ -112,7 +112,7 @@ form {
         margin-top: 23%;
     }
 }
-/* .thumbnail {
+.thumbnail {
     cursor: pointer;
     -transition: transform .2s;
     width: 60%;
@@ -124,5 +124,5 @@ form {
 
 .thumbnail :hover {
     transform: scale(10);
-} */
+}
 
