@@ -1,4 +1,4 @@
-
+//User Interface Logic
 $(document).ready(function() {
     $("#formOne").submit(function(event) {
 
@@ -9,7 +9,7 @@ $(document).ready(function() {
         const likedInput = $("select#liked").val();
         const selfInput = $("select#self").val();
 
-
+        //Quiz Form
         if (teamInput === "leading" && weaponInput === "me" && flawInput === "ego" && ideaInput === "do-it" && likedInput === "mind" && (selfInput === "extrovert" || selfInput === "social" || selfInput === "calculated" )) {
             $("#formOne").hide();
             $(".information").show();
