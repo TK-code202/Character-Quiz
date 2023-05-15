@@ -47,7 +47,7 @@ $(document).ready(function() {
             $(".information").show();
             $(".profileFour").show(1000);
         }
-      
+         
         event.preventDefault();
     });
 });
