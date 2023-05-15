@@ -1,0 +1,123 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.container {
+    margin: 0;
+    padding: 0;
+}
+
+
+.logo-section img {
+    max-width: 60px;
+    max-height: 80%;
+    border-radius: 300px;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 2%;
+    margin-left: 9%;
+}
+
+.nav {
+    margin-left: 12%;
+}
+
+.active {
+font-weight: 700;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    color: black
+}
+.showcase {
+    margin-left: 16%;
+    margin-top: 23%;
+    color: aquamarine;
+}
+
+/* index.html */
+.background {
+    padding: 8px;
+}
+.background img {
+    margin-left: 8%;
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    z-index: -1;
+    top: 15%;
+}
+
+.profiles {
+    margin-left: 28%;
+    display: none;
+}
+
+.profiles img {
+    width: 45%;
+
+}
+
+.tag {
+    background-color: gainsboro;
+    width: 45%;
+}
+
+.information {
+    background-color: darkgoldenrod;
+    width: 60%;
+    font-style: italic;
+    margin-left: 20%;
+    display: none;
+}
+
+form {
+    margin-left: 10%;
+    margin-top: 5%;
+    padding: 10px;
+    background: linear-gradient(to right, lightblue, lightgreen, rgb(245, 98, 98));
+}
+
+.row {
+    margin-left: 11%;
+}
+
+.col-sm img {
+    border-radius: 10px;
+}
+
+@media (max-width : 768px) {
+    .background img {
+        margin-left: 8%;
+        width: 80%;
+        height: 60%;
+        position: absolute;
+        z-index: -1;
+        top: 20%;
+    }
+
+    .showcase {
+        margin-top: 23%;
+    }
+}
+/* .thumbnail {
+    cursor: pointer;
+    -transition: transform .2s;
+    width: 60%;
+    border-radius: 10px;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease;
+}
+
+.thumbnail :hover {
+    transform: scale(10);
+} */
+
