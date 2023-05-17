@@ -96,6 +96,9 @@ form {
 
 .col-sm img {
     border-radius: 10px;
+    height: 80%;
+     /* object-fit: cover;
+    object-position: bottom; */
 }
 
 @media (max-width : 768px) {
